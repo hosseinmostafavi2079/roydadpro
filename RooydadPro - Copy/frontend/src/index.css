@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* تنظیم فونت وزیر برای کل بدنه */
+body {
+  font-family: 'Vazirmatn RD', sans-serif;
+  background-color: #f8fafc; /* رنگ پس‌زمینه روشن */
+}
