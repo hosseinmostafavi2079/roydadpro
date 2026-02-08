@@ -1,5 +1,5 @@
 import apiClient from './apiClient';
-import { Event } from '../types';
+import type { Event } from '../types'; 
 
 export const eventService = {
     getAllEvents: async () => {

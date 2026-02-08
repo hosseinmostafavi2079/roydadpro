@@ -8,4 +8,5 @@ class TicketSerializer(serializers.ModelSerializer):
     class Meta:
         model = Ticket
         fields = ['id', 'user', 'event', 'event_details', 'ticket_code', 'status', 'price_paid', 'purchase_date', 'is_present']
-        read_only_fields = ['ticket_code', 'purchase_date']
+        # تغییر مهم: اضافه کردن 'user' به لیست فیلدهای فقط خواندنی
+        read_only_fields = ['ticket_code', 'purchase_date', 'user']
