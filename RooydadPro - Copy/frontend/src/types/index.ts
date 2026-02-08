@@ -43,9 +43,21 @@ export interface Event {
     is_virtual: boolean;
     location: string | null;
     meeting_link: string | null;
-    price: number; 
+    price: number;
     capacity: number;
     registered_count: number;
     image: string | null;
     description: string;
+}
+
+export interface Ticket {
+    id: number;
+    user: number;
+    event: number;
+    event_details: Event;
+    ticket_code: string;
+    status: 'paid' | 'pending' | 'cancelled';
+    price_paid: number;
+    purchase_date: string;
+    is_present: boolean;
 }
